@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios en JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ejercicios en JavaScript</h1>
+      <a href="index2.html" class="btn">Ir a la Página AJAX</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>1. Detectar Palíndromo</h2>
+        <input type="text" id="palindromeInput" placeholder="Ingresa una palabra o frase">
+        <button onclick="checkPalindrome()">Verificar Palíndromo</button>
+        <p id="palindromeResult"></p>
+      </section>
+
+      <section>
+        <h2>2. Número Mayor</h2>
+        <input type="number" id="num1" placeholder="Primer número">
+        <input type="number" id="num2" placeholder="Segundo número">
+        <button onclick="findLargerNumber()">Comparar Números</button>
+        <p id="numberResult"></p>
+      </section>
+
+      <section>
+        <h2>3. Vocales en la Frase</h2>
+        <input type="text" id="vowelInput" placeholder="Ingresa una frase">
+        <button onclick="findVowels()">Mostrar Vocales</button>
+        <p id="vowelResult"></p>
+      </section>
+
+      <section>
+        <h2>4. Contar Vocales</h2>
+        <input type="text" id="vowelCountInput" placeholder="Ingresa una frase">
+        <button onclick="countVowels()">Contar Vocales</button>
+        <p id="vowelCountResult"></p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

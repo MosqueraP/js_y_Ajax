@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX - Mostrar Contenidos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AJAX - Mostrar Contenidos</h1>
+      <a href="index.html" class="btn">Ir a la Página de Ejercicios</a>
+    </header>
+
+    <main>
+      <section>
+        <label for="urlInput">URL:</label>
+        <input type="text" id="urlInput" placeholder="Ingresa una URL">
+        <button onclick="fetchContent()">Mostrar Contenidos</button>
+      </section>
+
+      <section>
+        <h2>Zona de Contenidos</h2>
+        <div id="contentArea" class="content-box">(El contenido aparecerá aquí)</div>
+      </section>
+
+      <section>
+        <h2>Estados de la Petición</h2>
+        <p id="requestState">(Estado de la petición aparecerá aquí)</p>
+      </section>
+
+      <section>
+        <h2>Cabeceras HTTP de la Respuesta</h2>
+        <div id="responseHeaders" class="content-box">(Las cabeceras aparecerán aquí)</div>
+      </section>
+
+      <section>
+        <h2>Código de Estado</h2>
+        <p id="responseCode">(El código de estado aparecerá aquí)</p>
+      </section>
+    </main>
+  </div>
+  <script src="ajax.js"></script>
+</body>
+</html>
